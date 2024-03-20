@@ -1,0 +1,27 @@
+/* . para classes  */
+/* # usados para id  */
+
+/* Para fazermos uma tonalidade "Gradiante" | hls */
+body {
+    background-color: #ffc0cb;
+    font-family: "Madimi One", sans-serif;
+
+    
+}
+
+h1 {
+    color: #b92d7f;
+    display: flex; 
+    justify-content: center;  
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #b92d7f;
+    text-decoration: none;
+} a:hover { 
+        color: #661042;
+    }

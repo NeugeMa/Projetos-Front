@@ -1,0 +1,21 @@
+/* vh = view high 
+vw = view width  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../aula03-vinicula/img/images-vinicola/vinicolas/pexels-tim-mossholder-2331884.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%; 
+
+
+    /* background-color: rgb(255, 208, 215);
+    border: 10px solid rgb(216, 112, 129);  /* Escrita atequada */
+     /* padding: 10px; 
+    box-sizing: border-box; | Precisa sempre ser usado, quando utilizamos o padding */
+} 

@@ -3,7 +3,7 @@ vw = view width  */
 :root{  /* Criando variáveis */
     --color-light: #ffffff; 
     --color-dark: #000;
-    --color-pink: #dc143c; 
+    --color-purple: #680f6d; 
     --transition: .5s;
     --font-body: "Madimi One", sans-serif;
 }
@@ -16,16 +16,61 @@ vw = view width  */
 }
 
 .Cabecalho-Page {
-    color: var(--color-light);
     width: 100%;
     height: 100px;
     padding: 0 30px;
     display: flex; 
     justify-content: space-between;
+    align-items: center;
 } .Cabecalho-Page ul {
     display: flex;
     gap: 30px; 
+} .Cabecalho-Page h1 {
+    color: var(--color-light);
+    font-size: 4vmin;
 }
+
+/*              Fim Cabeçalho               */ 
+
+/*              Começo Hero                 */ 
+.hero {
+    width: 100%;
+    height: calc(100vh - 100px);
+    color: var(--color-light);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* Espaçamento entre os componentes */
+
+    h2 { 
+        color: #680f6d;
+        font-size: clamp(24px, 4vw, 50px);  } 
+
+    p { 
+        display: flex;
+        justify-content: center;
+        
+        width: 80%;
+        text-wrap: balance;     
+        line-height: 1.7;   }
+} 
+
+.btn {
+    border: 2px solid var(--color-purple) ;
+    border-radius: 70px;
+    padding: 8px 30px;
+    transition: background-color var(--transition);
+
+    background-color: #680f6d;  
+
+    &:hover {
+        background-color: transparent;
+    }
+    
+}
+/*              Fim Hero                    */ 
 
 ul {
     list-style: none;
@@ -37,7 +82,7 @@ a {
     font-weight: 600;
     transition: var(--transition); 
 } a:hover {
-    color: var(--color-pink);
+    color: var(--color-purple);
 }
 
 .container {
